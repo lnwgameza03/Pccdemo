@@ -1,0 +1,19 @@
+<!-- <div class="jumbotron">
+  <h1 class="display-3">All List</h1>
+
+  <li *ngFor="let list of lists$">
+    <a>{{list.id}} : {{list.title}}</a>
+    <ul>
+      <li>{{list.detail}}</li>
+    </ul>
+  </li> -->
+  <h1 class="display-3">All List!</h1>
+<div class="jumbotron" *ngFor="let list of lists$">
+      <p class="lead">{{list.id}} : {{list.title}}</p>
+      <hr class="my-4">
+      <p>{{list.detail}}</p>
+      <p class="lead" align="right">
+          <button type="button" class="btn btn-primary" routerLink="/update/{{list.id}}" >Edit</button>
+          <button type="delete" class="btn btn-danger" routerLink="" [class.activated]="currentUrl == '/'" (click)="deleteList(list.id)">Delete</button>
+      </p>
+</div>
