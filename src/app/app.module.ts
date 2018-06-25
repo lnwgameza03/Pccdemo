@@ -8,6 +8,7 @@ import { BodyComponent } from './body/body.component';
 import { ListComponent } from './list/list.component';
 import { UpdateComponent } from './update/update.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     BodyComponent,
     ListComponent,
-    UpdateComponent
+    UpdateComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
